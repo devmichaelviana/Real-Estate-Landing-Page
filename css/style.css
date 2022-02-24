@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+header{
+    padding: 20px 0;
+}
+
+.clear{
+    clear: both;
+}
+
+header > .center, footer > .center{
+    
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo1{
+    float: left;    
+}
+
+.logo2{
+    float: right;
+}
+
+.banner .center{
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("../imagens/bg-form.jpg");
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner .form{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    float: right;
+    position: relative;
+    right: 50px;
+    top: 100px;
+    z-index: 2;
+}
+
+.banner .form > h2{
+    background-color: #000000;
+    padding: 25px 10px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: white;
+}
+
+.banner .form-inputs{
+    padding: 0 10px;
+}
+
+.form-inputs p{
+    font-weight: lighter;
+    font-size: 14px;
+    color: #303030;
+    margin-top: 40px;
+}
+
+.form-inputs input[type=text]{
+    display: block;
+    width: 380px;
+    height: 40px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+}
+
+.form-inputs input[type=button]{
+    display: block;
+    width: 380px;
+    margin-bottom: 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    font-size: 26px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.banner .form > p{
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #303030;
+}
+
+.headline .center{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000000;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.headline .center h3{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.headline .center p{
+    color: white;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: lighter;
+}
+
+.apartments .center{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.apartments-photo-text{
+    border-bottom: 1px solid black;
+}
+
+.apartments-text-photo{
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.apartments-text-photo{
+    background-color: black;
+    color: white;
+}
+
+.apartments-photo-text img{
+    width: 45%;
+    height: 500px;
+    float: left;
+}
+
+.apartments-photo-text p{
+    width: 55%;
+    height: 500px;
+    float: left;
+    text-align: justify;
+    position: relative;
+    top: 200px;
+    padding: 0 20px;
+}
+
+.apartments-text-photo img{
+    width: 45%;
+    height: 500px;
+    float: left;
+}
+
+.apartments-text-photo p{
+    width: 55%;
+    height: 500px;
+    float: left;
+    text-align: justify;
+    position: relative;
+    top: 200px;
+    padding: 0 20px;
+}
+
+footer{
+    padding: 50px 0;
+    height: auto;
+}
+
+@media screen and (max-width: 800px){
+    header{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .logo1, .logo2{
+        float: none;
+        margin: 10px 0;
+    }
+
+    .banner .form{
+        float: none;
+        margin: 0 auto;
+        height: 600px;
+        position: relative;
+        top: 100px;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .apartments-text-photo{
+        display: block;
+    }
+    
+    .apartments-photo-text img, .apartments-text-photo img{
+        width: 100%;
+        height: 500px;
+        float: none;
+        background-position: left;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .apartments-photo-text p, .apartments-text-photo p{
+        width: 100%;
+        height: auto;
+        float: none;
+        position: relative;
+        top: 0;
+    }
+}
